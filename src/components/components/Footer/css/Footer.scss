@@ -1,0 +1,56 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+        padding-top: 3.25rem;
+        width: 100%;
+        max-width: 46.062rem;
+        font-size: .875rem;
+        > hr {
+            border-bottom: 0 solid black;
+            border-left: 0 solid black;
+            border-right: 0 solid black;
+        }
+        > div {
+            display: flex;
+            gap: 1.25rem;
+            > h4 {
+                font-size: .875rem;
+                font-weight: normal;
+                text-decoration: underline;
+                color: #757575;
+            }
+            > span {
+                > a {
+                    display: flex;
+                    gap: .5625rem;
+                    text-decoration: underline;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+body.light {
+    .Footer {
+        > div {
+            > hr {
+                border-top: .0625rem solid #E9E9E9;
+            }
+        }
+    }
+}
+
+body.dark {
+    .Footer {
+        > div {
+            > hr {
+                border-top: .0625rem solid #3A3A3A;
+            }
+        }
+    }
+}

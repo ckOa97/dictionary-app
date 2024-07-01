@@ -1,0 +1,66 @@
+.ThemeSwitcher {
+    display: flex;
+    gap: 1.1875rem;
+    align-items: center;
+    padding-left: 1.625rem;
+    @media screen and (max-width: 380px) {
+        padding-left: .8125rem;
+        gap: .59375rem;
+    }
+    > div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 2.5rem;
+        height: 1.25rem;
+        border-radius: 1rem;
+        padding: 0 7.5%;
+        transition: background-color .3s;
+        cursor: pointer;
+        outline-offset: .3rem;
+        > div {
+            position: absolute;
+            width: 35%;
+            height: 70%;
+            background-color: white;
+            border-radius: 100%;
+            transition: right .1s, left .1s;
+        }
+    }
+}
+
+body.light {
+    .ThemeSwitcher {
+        border-left: .0625rem solid #757575;
+        > div {
+            background-color: #757575;
+            &:hover {
+                background-color: #A445ED;
+            }
+            &:focus-visible {
+                background-color: #A445ED;
+            }
+            > div {
+                left: 7.5%;
+            }
+        }
+    }
+}
+
+body.dark {
+    .ThemeSwitcher {
+        border-left: .0625rem solid #E9E9E9;
+        > div {
+            background-color: #A445ED;
+            &:hover {
+                background-color: #A445ED;
+            }
+            &:focus-visible {
+                background-color: #A445ED;
+            }
+            > div {
+                left: 57.5%;
+            }
+        }
+    }
+}

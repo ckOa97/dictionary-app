@@ -1,0 +1,64 @@
+.ThemeSwitcher {
+  display: flex;
+  gap: 1.1875rem;
+  align-items: center;
+  padding-left: 1.625rem;
+}
+@media screen and (max-width: 380px) {
+  .ThemeSwitcher {
+    padding-left: 0.8125rem;
+    gap: 0.59375rem;
+  }
+}
+.ThemeSwitcher > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.25rem;
+  border-radius: 1rem;
+  padding: 0 7.5%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  outline-offset: 0.3rem;
+}
+.ThemeSwitcher > div > div {
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  background-color: white;
+  border-radius: 100%;
+  transition: right 0.1s, left 0.1s;
+}
+
+body.light .ThemeSwitcher {
+  border-left: 0.0625rem solid #757575;
+}
+body.light .ThemeSwitcher > div {
+  background-color: #757575;
+}
+body.light .ThemeSwitcher > div:hover {
+  background-color: #A445ED;
+}
+body.light .ThemeSwitcher > div:focus-visible {
+  background-color: #A445ED;
+}
+body.light .ThemeSwitcher > div > div {
+  left: 7.5%;
+}
+
+body.dark .ThemeSwitcher {
+  border-left: 0.0625rem solid #E9E9E9;
+}
+body.dark .ThemeSwitcher > div {
+  background-color: #A445ED;
+}
+body.dark .ThemeSwitcher > div:hover {
+  background-color: #A445ED;
+}
+body.dark .ThemeSwitcher > div:focus-visible {
+  background-color: #A445ED;
+}
+body.dark .ThemeSwitcher > div > div {
+  left: 57.5%;
+}/*# sourceMappingURL=ThemeSwitcher.css.map */

@@ -1,0 +1,12 @@
+.PlayIcon {
+    > g {
+        > circle {
+            transition: .3s ease-in-out;
+            opacity: .25;
+        }
+        > polygon {
+            fill: #A445ED;
+            transition: .3s ease-in-out;
+        }
+    }
+}

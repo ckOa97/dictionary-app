@@ -1,0 +1,120 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6875rem;
+  max-width: 46.062rem;
+  width: 100%;
+}
+.Search > form {
+  position: relative;
+  z-index: 0;
+}
+.Search > form > input {
+  width: 100%;
+  padding: 1.3625rem 4.7rem 1.3625rem 1.5625rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  border-style: none;
+  caret-color: #A445ED;
+}
+.Search > form .validInput:hover {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+.Search > form .validInput:focus {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+.Search > form .invalidInput {
+  outline: 0.0625rem solid #FF5252;
+  outline-offset: -0.0625rem;
+}
+.Search > form .invalidInput:hover {
+  outline: 0.0625rem solid #FF5252;
+  outline-offset: -0.0625rem;
+}
+.Search > form .invalidInput:focus {
+  outline: 0.0625rem solid #FF5252;
+  outline-offset: -0.0625rem;
+}
+.Search > form > button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 4.6rem;
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+  border-radius: 0 1rem 1rem 0;
+}
+.Search > span {
+  color: #FF5252;
+  font-size: 1.25rem;
+}
+
+body.light .Search > form > input {
+  background-color: #F4F4F4;
+}
+body.light .Search > form > input:-webkit-autofill {
+  outline: 0.125rem solid #F4F4F4;
+  outline-offset: -0.0625rem;
+  box-shadow: 0 0 0 62.5rem #F4F4F4 inset;
+  -webkit-text-fill-color: #2D2D2D;
+}
+body.light .Search > form > input:-webkit-autofill, body.light .Search > form > input:autofill {
+  outline: 0.125rem solid #F4F4F4;
+  outline-offset: -0.0625rem;
+  box-shadow: 0 0 0 62.5rem #F4F4F4 inset;
+  -webkit-text-fill-color: #2D2D2D;
+}
+body.light .Search > form > input:-webkit-autofill:focus {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.light .Search > form > input:-webkit-autofill:focus, body.light .Search > form > input:autofill:focus {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.light .Search > form > input:-webkit-autofill:hover {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.light .Search > form > input:-webkit-autofill:hover, body.light .Search > form > input:autofill:hover {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+
+body.dark .Search > form > input {
+  background-color: #1F1F1F;
+}
+body.dark .Search > form > input:-webkit-autofill {
+  outline: 0.125rem solid #1F1F1F;
+  outline-offset: -0.0625rem;
+  box-shadow: 0 0 0 62.5rem #1F1F1F inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+body.dark .Search > form > input:-webkit-autofill, body.dark .Search > form > input:autofill {
+  outline: 0.125rem solid #1F1F1F;
+  outline-offset: -0.0625rem;
+  box-shadow: 0 0 0 62.5rem #1F1F1F inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+body.dark .Search > form > input:-webkit-autofill:focus {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.dark .Search > form > input:-webkit-autofill:focus, body.dark .Search > form > input:autofill:focus {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.dark .Search > form > input:-webkit-autofill:hover {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}
+body.dark .Search > form > input:-webkit-autofill:hover, body.dark .Search > form > input:autofill:hover {
+  outline: 0.0625rem solid #A445ED;
+  outline-offset: -0.0625rem;
+}/*# sourceMappingURL=Search.css.map */

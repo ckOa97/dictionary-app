@@ -1,0 +1,29 @@
+.Error {
+  display: flex;
+  justify-content: center;
+}
+.Error > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8125rem;
+  text-align: center;
+  padding-top: 8.4375rem;
+  width: 100%;
+  max-width: 46.062rem;
+}
+.Error > section span {
+  font-size: 4rem;
+}
+.Error > section div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+.Error > section div h1 {
+  font-size: 1.25rem;
+}
+.Error > section div p {
+  color: #757575;
+  font-size: 1.125rem;
+}/*# sourceMappingURL=Error.css.map */

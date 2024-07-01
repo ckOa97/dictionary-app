@@ -1,0 +1,105 @@
+.Meaning {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
+    > .partOfSpeech {
+        width: 100%;
+        display: flex;
+        gap: 1.3125rem;
+        > h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+        > div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            hr {
+                border-bottom: 0 solid black;
+                border-left: 0 solid black;
+                border-right: 0 solid black;
+            }
+        }
+    }
+    > .definitions {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        > h3 {
+            font-size: 1.25rem;
+            color: #757575;
+            font-weight: normal;
+        }
+        > div {
+            font-size: 1.125rem;
+            padding-left: 2.4rem;
+            > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                > li {
+                    > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .8rem;
+                        span:nth-of-type(2) {
+                            color: #757575;
+                        }
+                    }
+                }
+                > li::marker {
+                    color: #A445ED;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+    > .synonyms {
+        display: flex;
+        gap: 1.5rem;
+        > h3 {
+            font-size: 1.25rem;
+            color: #757575;
+            font-weight: normal;
+        }
+        > span {
+            font-size: 1.25rem;
+            color: #A445ED;
+            font-weight: bold;
+            > span {
+                > span {
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.light {
+    .Meaning {
+        > .partOfSpeech {
+            > div {
+                hr {
+                    border-top: .0625rem solid  #E9E9E9;
+                }
+            }
+        }
+    }
+}
+
+body.dark {
+    .Meaning {
+        > .partOfSpeech {
+            > div {
+                hr {
+                    border-top: .0625rem solid  #3A3A3A;
+                }
+            }
+        }
+    }
+}

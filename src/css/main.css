@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(0.75rem, 0.3703703704vw + 0.6759259259rem, 1rem);
+}
+
+body {
+  min-height: 100vh;
+}
+body.light {
+  color: #2D2D2D;
+}
+body.dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+body #root {
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 3.5625rem 2.5rem;
+}
+@media screen and (max-width: 400px) {
+  body #root {
+    padding: 1.78125rem 1.25rem;
+  }
+}
+body.SansSerif {
+  font-family: sans-serif;
+}
+body.SansSerif .Search {
+  font-family: sans-serif !important;
+}
+body.Serif {
+  font-family: serif;
+}
+body.Serif .Search {
+  font-family: serif !important;
+}
+body.Mono {
+  font-family: monospace;
+}
+body.Mono .Search {
+  font-family: monospace !important;
+}/*# sourceMappingURL=main.css.map */

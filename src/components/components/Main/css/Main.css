@@ -1,0 +1,74 @@
+.Main {
+  display: flex;
+  justify-content: center;
+}
+.Main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+  padding-top: 3.75rem;
+  width: 100%;
+  max-width: 46.062rem;
+}
+.Main > div > section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.Main > div > section:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Main > div > section:first-of-type > div > h1 {
+  font-size: 3.75rem;
+  overflow-wrap: anywhere;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (max-width: 560px) {
+  .Main > div > section:first-of-type > div > h1 {
+    font-size: 2.678rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Main > div > section:first-of-type > div > h1 {
+    font-size: 2.231rem;
+  }
+}
+.Main > div > section:first-of-type > div > span {
+  font-size: 1.5rem;
+  color: #A445ED;
+}
+@media screen and (max-width: 560px) {
+  .Main > div > section:first-of-type > div > span {
+    font-size: 1.071rem;
+  }
+}
+.Main > div > section:first-of-type > button {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background-color: transparent;
+  border-style: none;
+  outline-offset: 0.3rem;
+  cursor: pointer;
+}
+.Main > div > section:first-of-type > button:hover > .PlayIcon > g > circle {
+  opacity: 1;
+}
+.Main > div > section:first-of-type > button:hover > .PlayIcon > g > polygon {
+  fill: white;
+}
+.Main > div > section:first-of-type > button:focus-visible > .PlayIcon > g > circle {
+  opacity: 1;
+}
+.Main > div > section:first-of-type > button:focus-visible > .PlayIcon > g > polygon {
+  fill: white;
+}/*# sourceMappingURL=Main.css.map */

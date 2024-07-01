@@ -1,0 +1,61 @@
+.FontsDropdownList {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: bold;
+    min-width: 7.5rem;
+    padding: 0 .3rem;
+    cursor: pointer;
+    > div {
+        justify-content: right;
+        display: flex;
+        gap: 1.1875rem;
+        width: 100%;
+    }
+    > ul {
+        list-style: none;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        width: 11.437rem;
+        padding: .9375rem 0;
+        border-radius: 1.1rem;
+        > li {
+            padding: .46875rem 1.5625rem;
+            &:hover {
+                color: #A445ED;
+            }
+        }
+        > .selected {
+            color: #A445ED;
+        }
+    }
+}
+
+.FontsDropdownList.closed {
+    > ul {
+        display: none;
+    }
+}
+
+body.light {
+    .FontsDropdownList {
+        > ul {
+            background-color: white;
+            box-shadow: 0 0 1rem 0 #9797973a;
+        }
+    }
+}
+
+body.dark {
+    .FontsDropdownList {
+        > ul {
+            background-color: #1F1F1F;
+            box-shadow: 0 0.3125rem 1.875rem 0 #A445ED;
+        }
+    }
+}

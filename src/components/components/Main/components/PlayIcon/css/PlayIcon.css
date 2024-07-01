@@ -1,0 +1,8 @@
+.PlayIcon > g > circle {
+  transition: 0.3s ease-in-out;
+  opacity: 0.25;
+}
+.PlayIcon > g > polygon {
+  fill: #A445ED;
+  transition: 0.3s ease-in-out;
+}/*# sourceMappingURL=PlayIcon.css.map */

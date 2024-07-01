@@ -1,0 +1,81 @@
+.Main {
+    display: flex;
+    justify-content: center;
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 3.25rem;
+        padding-top: 3.75rem;
+        width: 100%;
+        max-width: 46.062rem;
+        > section:first-of-type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            > div {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                > h1 {
+                    font-size: 3.75rem;
+                    overflow-wrap: anywhere;
+                    -webkit-hyphens: auto;
+                    -moz-hyphens: auto;
+                    hyphens: auto;
+                    @media screen and (max-width: 560px) {
+                        font-size: 2.678rem;
+                    }
+                    @media screen and (max-width: 420px) {
+                        font-size: 2.231rem;
+                    }
+                }
+                > span {
+                    font-size: 1.5rem;
+                    color: #A445ED;
+                    @media screen and (max-width: 560px) {
+                        font-size: 1.071rem;
+                    }
+                }
+            }
+            > button {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4.6875rem;
+                height: 4.6875rem;
+                flex-shrink: 0;
+                border-radius: 100%;
+                background-color: transparent;
+                border-style: none;
+                outline-offset: 0.3rem;
+                cursor: pointer;
+                &:hover {
+                    > .PlayIcon {
+                        > g {
+                            > circle {
+                                opacity: 1;
+                            }
+                            > polygon {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                &:focus-visible {
+                    > .PlayIcon {
+                        > g {
+                            > circle {
+                                opacity: 1;
+                            }
+                            > polygon {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
